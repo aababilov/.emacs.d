@@ -31,6 +31,9 @@
 (setq scroll-down-agressively 0)
 (global-set-key "\r" 'newline-and-indent)
 
+;; whitespaces
+(add-hook 'before-save-hook 'delete-trailing-whitespace)
+
 
 ;; tabbar
 (if (eq window-system 'x)
